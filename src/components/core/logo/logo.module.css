@@ -1,0 +1,10 @@
+p.logo{
+    color: hsl(0, 0%, 100%);
+    font-size: 20px;
+}
+
+@media (min-width: 768px) {
+    p.logo{
+        font-size: 26px;
+    }
+ }
