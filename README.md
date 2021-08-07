@@ -40,8 +40,8 @@ Users should be able to:
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
 - Css Modules - For styles
-- [ipgeolaction API](https://ipgeolocation.io)
-- React Leaflet map (https://react-leaflet.js.org/)
+- [ipgeolaction API](https://ipgeolocation.io) - For Ip geoloaction
+- [React Leaflet map](https://react-leaflet.js.org/) - For map
 
 
 ### What I learned
