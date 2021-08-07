@@ -11,9 +11,10 @@ const MapSection = props =>{
     let [Latvalue, setLatvalue] = useState(null)
     let defaultPosition = [0.00000, 0.00000];
     let DefaultZoom = 1
+    let ree = Ladvalue
 
     useEffect(()=>{
-       if( (lat !== Latvalue && lat !== 0) && (lad !== Ladvalue && lad !==0)){
+       if( (lat !== Latvalue && lat !== 0) && (lad !== ree && lad !==0)){
            setPosition([lat, lad])
            setLadvalue(lad)
            setLatvalue(lat)
@@ -21,7 +22,7 @@ const MapSection = props =>{
        return ()=>{
            setPosition(null)
        }   
-    },[lat, lad])
+    },[lat, lad])// eslint-disable-line react-hooks/exhaustive-deps
 
     return(
         <div ClassName={style.wrapper}>
