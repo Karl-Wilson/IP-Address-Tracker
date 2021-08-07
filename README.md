@@ -63,4 +63,4 @@ Adding of ip address validation feature.
 
 - Name: Okose Chidelu Karl
 - Frontend Mentor - [@Karl-Wilson](https://www.frontendmentor.io/profile/Karl-Wilson)
-- Instagram - [@developerkarl](https://www.insragram.com/@developerkarl
+- Instagram - [@developerkarl](https://www.insragram.com/@developerkarl)
