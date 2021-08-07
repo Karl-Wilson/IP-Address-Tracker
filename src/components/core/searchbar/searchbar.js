@@ -33,7 +33,6 @@ const Searchbar =  ({wrapperClass, searchbar_class, ...props}) => {
         if(data === "Something is wrong"){
             dispatch(searchbarActions.adderror(data))
         }else{
-            if(data){
                 dispatch(searchbarActions.addone(data.ip))
                 dispatch(searchbarActions.addtwo(data.city + ', ' + data.state_prov + ' ' + data.country_code2 + ' ' + data.zipcode))
                 dispatch(searchbarActions.addthree(data.time_zone.offset))
@@ -41,7 +40,6 @@ const Searchbar =  ({wrapperClass, searchbar_class, ...props}) => {
                 dispatch(searchbarActions.addLat(data.latitude))
                 dispatch(searchbarActions.addLad(data.longitude))
                 dispatch(searchbarActions.addloading(false))
-            }
         }
     }
     if(firstTime === 0){

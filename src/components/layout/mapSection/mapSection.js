@@ -21,7 +21,7 @@ const MapSection = props =>{
        return ()=>{
            setPosition(null)
        }   
-    },[lat, lad, Latvalue, Ladvalue])
+    },[lat, lad])
 
     return(
         <div ClassName={style.wrapper}>
