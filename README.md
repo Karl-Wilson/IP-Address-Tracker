@@ -4,7 +4,6 @@ This is a solution to the [IP address tracker challenge on Frontend Mentor](http
 
 ## Table of contents
 
-- [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
@@ -14,7 +13,6 @@ This is a solution to the [IP address tracker challenge on Frontend Mentor](http
 - [Author](#author)
 
 
-## Overview
 
 ### The challenge
 
@@ -66,5 +64,5 @@ Adding of ip address validation feature.
 ## Author
 
 - Name: Okose Chidelu Karl
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@Karl-Wilson](https://www.frontendmentor.io/profile/Karl-Wilson)
 - Instagram - (https://www.insragram.com/@developerkarl
