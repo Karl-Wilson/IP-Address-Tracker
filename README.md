@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: 
-- Live Site URL: (https://ip-address-tracker-plum.vercel.app/)
+- Live Site URL: https://ip-address-tracker-plum.vercel.app/
 
 
 ### Built with
@@ -56,8 +56,8 @@ Adding of ip address validation feature.
 
 ### Useful resources
 
-- Fetch API(https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) - For quick reference
-- React Redux documentation(https://redux.js.org/introduction/installation) - For quick reference
+- [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) - For quick reference
+- [React Redux documentation](https://redux.js.org/introduction/installation) - For quick reference
 
 ## Author
 
