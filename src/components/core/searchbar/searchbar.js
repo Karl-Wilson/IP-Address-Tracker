@@ -48,7 +48,7 @@ const Searchbar =  ({wrapperClass, searchbar_class, ...props}) => {
     return(
         <div className={wrapperClass} {...props}>
             <div className={style.innerWrapper}>
-                <input  type="text" placeholder="Search for any Ip address or Domain" className={[style.searchbar, searchbar_class].join(" ")} value={inputValue} onChange={searchHandler}/>
+                <input  type="text" placeholder="Search for any Ip address" className={[style.searchbar, searchbar_class].join(" ")} value={inputValue} onChange={searchHandler}/>
                 <div className={style.searchbtn}  onClick={submitHandler}><img src={arrowIcon} alt="arrow"/></div>
             </div>
         </div>
