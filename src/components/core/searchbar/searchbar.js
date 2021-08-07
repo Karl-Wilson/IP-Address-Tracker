@@ -19,7 +19,7 @@ const Searchbar =  ({wrapperClass, searchbar_class, ...props}) => {
         let address;
         let client;
         
-        if(firstTime == 0){
+        if(firstTime === 0){
             firstTime = 1
             client = await FetchData('https://api.ipify.org?format=json')
             address = client.ip
@@ -30,21 +30,21 @@ const Searchbar =  ({wrapperClass, searchbar_class, ...props}) => {
         dispatch(searchbarActions.addloading(true))
         let url = `${apiGet}apiKey=${apiKey}&ip=${address}`;
         let data = await FetchData(url)
-        console.log(data)
-        if(data == "Something is wrong"){
+        if(data === "Something is wrong"){
             dispatch(searchbarActions.adderror(data))
         }else{
-        dispatch(searchbarActions.addone(data.ip))
-        dispatch(searchbarActions.addtwo(data.city + ', ' + data.state_prov + ' ' + data.country_code2 + ' ' + data.zipcode))
-        dispatch(searchbarActions.addthree(data.time_zone.offset))
-        dispatch(searchbarActions.addfour(data.isp))
-        dispatch(searchbarActions.addLat(data.latitude))
-        dispatch(searchbarActions.addLad(data.longitude))
-        dispatch(searchbarActions.addloading(false))
-
+            if(data){
+                dispatch(searchbarActions.addone(data.ip))
+                dispatch(searchbarActions.addtwo(data.city + ', ' + data.state_prov + ' ' + data.country_code2 + ' ' + data.zipcode))
+                dispatch(searchbarActions.addthree(data.time_zone.offset))
+                dispatch(searchbarActions.addfour(data.isp))
+                dispatch(searchbarActions.addLat(data.latitude))
+                dispatch(searchbarActions.addLad(data.longitude))
+                dispatch(searchbarActions.addloading(false))
+            }
+        }
     }
-    }
-    if(firstTime == 0){
+    if(firstTime === 0){
         submitHandler()
     }
     return(

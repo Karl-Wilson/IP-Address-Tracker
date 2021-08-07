@@ -6,7 +6,6 @@ import { useSelector } from "react-redux";
 const Home = props =>{
     const showload = useSelector(state=> state.loading)
     const error = useSelector(state=> state.error)
-    console.log(showload)
     return(
         <PageContainer>
             { showload && <Lazyloader>{error? error:'Loading...'}</Lazyloader>}

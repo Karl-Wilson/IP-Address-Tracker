@@ -1,6 +1,6 @@
 import IpDetail from "./ipDetails";
 import style from "./ipDetailsContainer.module.css"
-import React, {useEffect} from "react";
+import React from "react";
 import { useSelector } from "react-redux";
 
 
@@ -11,7 +11,7 @@ const IpDetailsContainer = props =>{
     const isp = useSelector(state => state.isp)
     let timezoneModified;
         if(timezone){
-            if(Math.sign(timezone) == -1){
+            if(Math.sign(timezone) === -1){
                 let timezoneString = Math.abs(timezone)
                     timezoneModified = `UTC -0${timezoneString}:00`
             }else{
