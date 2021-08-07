@@ -6,7 +6,8 @@ const HeadSection = props =>{
         <div className={style.wrapper}>
             <Logo wrapperClass={style.logo}/>
             <Searchbar wrapperClass={style.searchbarWrapper}/>
-            <IpDetailsContainer/>
+            
+             <IpDetailsContainer/>
         </div>
     )
 }

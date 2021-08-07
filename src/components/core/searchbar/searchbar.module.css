@@ -36,7 +36,9 @@
     border-bottom-right-radius: 10px;
     cursor: pointer;
 }
-
+.searchbtn:hover{
+    background-color: hsl(0, 0%, 10%);
+}
 @media (min-width: 768px) { 
     .innerWrapper{
         width: 500px;

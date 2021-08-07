@@ -1,11 +1,11 @@
-.wrapper{ 
-    width: 100%;
+.mapHeight{
     height: 80vh;
-    background-color: #cccccc;
+    width: 100%;
+    z-index: 1;
 }
 
 @media (min-width: 1200px) {
-    .wrapper{
+    .mapHeight{
         height: 70vh;
     }
 }
