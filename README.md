@@ -54,8 +54,6 @@ Users should be able to:
 
 Adding of ip address validation feature.
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
-
 ### Useful resources
 
 - Fetch API(https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) - For quick reference
@@ -65,4 +63,4 @@ Adding of ip address validation feature.
 
 - Name: Okose Chidelu Karl
 - Frontend Mentor - [@Karl-Wilson](https://www.frontendmentor.io/profile/Karl-Wilson)
-- Instagram - (https://www.insragram.com/@developerkarl
+- Instagram - [@developerkarl](https://www.insragram.com/@developerkarl
