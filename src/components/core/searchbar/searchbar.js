@@ -26,22 +26,28 @@ const Searchbar =  ({wrapperClass, searchbar_class, ...props}) => {
         }else{
             address = inputValue
         }
-
-        dispatch(searchbarActions.addloading(true))
-        let url = `${apiGet}apiKey=${apiKey}&ip=${address}`;
-        let data = await FetchData(url)
-        if(data === "Something is wrong"){
-            dispatch(searchbarActions.adderror(data))
-        }else{
-                dispatch(searchbarActions.addone(data.ip))
-                dispatch(searchbarActions.addtwo(data.city + ', ' + data.state_prov + ' ' + data.country_code2 + ' ' + data.zipcode))
-                dispatch(searchbarActions.addthree(data.time_zone.offset))
-                dispatch(searchbarActions.addfour(data.isp))
-                dispatch(searchbarActions.addLat(data.latitude))
-                dispatch(searchbarActions.addLad(data.longitude))
-                dispatch(searchbarActions.addloading(false))
+        try{
+            dispatch(searchbarActions.addloading(true))
+               if(!address){ throw new Error("Something went wrong")}
+                    let url = `${apiGet}apiKey=${apiKey}&ip=${address}`;
+                    let data = await FetchData(url)
+                    if(data === "Something is wrong"){
+                        dispatch(searchbarActions.adderror(data))
+                    }else{
+                            dispatch(searchbarActions.addone(data.ip))
+                            dispatch(searchbarActions.addtwo(data.city + ', ' + data.state_prov + ' ' + data.country_code2 + ' ' + data.zipcode))
+                            dispatch(searchbarActions.addthree(data.time_zone.offset))
+                            dispatch(searchbarActions.addfour(data.isp))
+                            dispatch(searchbarActions.addLat(data.latitude))
+                            dispatch(searchbarActions.addLad(data.longitude))
+                            dispatch(searchbarActions.addloading(false))
+                    }
+            
         }
-    }
+        catch(err){
+            dispatch(searchbarActions.adderror(err.message))
+        }
+    }    
     if(firstTime === 0){
         submitHandler()
     }

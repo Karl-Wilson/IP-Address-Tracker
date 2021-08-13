@@ -1,9 +1,9 @@
 import {createSlice} from '@reduxjs/toolkit';
 const initialState = {
-    ipAddress: '',
-    location: '',
-    timezone: '',
-    isp:'',
+    ipAddress: null,
+    location: null,
+    timezone: null,
+    isp: null,
     lat: 0,
     lad: 0,
     loading: null,

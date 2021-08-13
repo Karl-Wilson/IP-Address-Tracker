@@ -24,10 +24,10 @@ const IpDetailsContainer = props =>{
     return(
         <div className={style.wrapper}>
             <div className={style.innerWrapper}>   
-               <IpDetail title="IP ADDRESS" body={ipAddress}/>
-               <IpDetail title="LOCATION" body={location} className={style.border}/>
+               <IpDetail title="IP ADDRESS" body={ipAddress? ipAddress: ''}/>
+               <IpDetail title="LOCATION" body={location? location: ''} className={style.border}/>
                <IpDetail title="TIMEZONE" body={timezoneModified}/>
-               <IpDetail title="ISP" body={isp} className={style.border1}/>
+               <IpDetail title="ISP" body={isp? isp:''} className={style.border1}/>
             </div>
         </div>
     )
